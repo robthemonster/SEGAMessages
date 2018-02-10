@@ -1,3 +1,4 @@
+package SEGAMessages;
 import java.io.Serializable;
 public class ClientInfo implements Serializable {
     private String firebaseToken;
