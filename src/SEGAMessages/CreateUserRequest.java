@@ -6,6 +6,16 @@ public class CreateUserRequest implements Serializable {
     String username;
     String password;
 
+    String firebaseToken;
+
+    public String getFirebaseToken() {
+        return firebaseToken;
+    }
+
+    public void setFirebaseToken(String firebaseToken) {
+        this.firebaseToken = firebaseToken;
+    }
+
     public String getUsername() {
         return username;
     }
