@@ -2,17 +2,7 @@ package SEGAMessages;
 
 import java.io.Serializable;
 
-public class UserLoginResponse implements Serializable {
-    private String username;
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
+public class CreateGroupResponse implements Serializable {
     private boolean succeeded;
     private String errorMessage;
 
