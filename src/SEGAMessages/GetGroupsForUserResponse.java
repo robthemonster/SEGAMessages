@@ -1,9 +1,8 @@
 package SEGAMessages;
 
-import java.io.Serializable;
 import java.util.List;
 
-public class GetGroupsForUserResponse implements Serializable {
+public class GetGroupsForUserResponse extends Response {
     private List<String> groups;
     private String errorMessage;
 

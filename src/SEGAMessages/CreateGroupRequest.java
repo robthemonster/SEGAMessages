@@ -1,19 +1,8 @@
 package SEGAMessages;
 
-import java.io.Serializable;
-
-public class CreateGroupRequest implements Serializable {
+public class CreateGroupRequest extends Request {
     private String groupName;
     private String creator;
-    private String firebaseToken;
-
-    public String getFirebaseToken() {
-        return firebaseToken;
-    }
-
-    public void setFirebaseToken(String firebaseToken) {
-        this.firebaseToken = firebaseToken;
-    }
 
     public String getGroupName() {
         return groupName;

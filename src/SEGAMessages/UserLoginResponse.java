@@ -1,8 +1,6 @@
 package SEGAMessages;
 
-import java.io.Serializable;
-
-public class UserLoginResponse implements Serializable {
+public class UserLoginResponse extends Response {
     private String username;
 
     public String getUsername() {

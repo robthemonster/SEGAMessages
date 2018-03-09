@@ -1,20 +1,8 @@
 package SEGAMessages;
 
-import java.io.Serializable;
-
-public class CreateUserRequest implements Serializable {
+public class CreateUserRequest extends Request {
     String username;
     String password;
-
-    String firebaseToken;
-
-    public String getFirebaseToken() {
-        return firebaseToken;
-    }
-
-    public void setFirebaseToken(String firebaseToken) {
-        this.firebaseToken = firebaseToken;
-    }
 
     public String getUsername() {
         return username;

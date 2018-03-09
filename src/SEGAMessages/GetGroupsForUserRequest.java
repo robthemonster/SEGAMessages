@@ -1,10 +1,7 @@
 package SEGAMessages;
 
-import java.io.Serializable;
-
-public class GetGroupsForUserRequest implements Serializable {
+public class GetGroupsForUserRequest extends Request {
     private String username;
-    private String firebaseToken;
 
     public String getUsername() {
         return username;
@@ -12,13 +9,5 @@ public class GetGroupsForUserRequest implements Serializable {
 
     public void setUsername(String username) {
         this.username = username;
-    }
-
-    public String getFirebaseToken() {
-        return firebaseToken;
-    }
-
-    public void setFirebaseToken(String firebaseToken) {
-        this.firebaseToken = firebaseToken;
     }
 }

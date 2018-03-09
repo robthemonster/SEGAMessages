@@ -1,8 +1,6 @@
 package SEGAMessages;
 
-import java.io.Serializable;
-
-public class CreateGroupResponse implements Serializable {
+public class CreateGroupResponse extends Response {
     private boolean succeeded;
     private String errorMessage;
 
