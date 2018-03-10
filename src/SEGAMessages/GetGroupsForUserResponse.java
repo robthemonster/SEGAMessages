@@ -3,6 +3,7 @@ package SEGAMessages;
 import java.util.List;
 
 public class GetGroupsForUserResponse extends Response {
+    public static final String TYPE = "GetGroupsForUserReponse";
     private List<String> groups;
     private String errorMessage;
 
@@ -20,5 +21,10 @@ public class GetGroupsForUserResponse extends Response {
 
     public void setErrorMessage(String errorMessage) {
         this.errorMessage = errorMessage;
+    }
+
+    @Override
+    public String type() {
+        return TYPE;
     }
 }

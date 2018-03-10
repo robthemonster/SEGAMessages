@@ -3,6 +3,7 @@ package SEGAMessages;
 import java.util.List;
 
 public class GetUsersForGroupResponse extends Response {
+    public static final String TYPE = "GetUsersForGroupResponse";
     private List<String> users;
     private String groupname;
 
@@ -20,5 +21,10 @@ public class GetUsersForGroupResponse extends Response {
 
     public void setGroupname(String groupname) {
         this.groupname = groupname;
+    }
+
+    @Override
+    public String type() {
+        return TYPE;
     }
 }

@@ -1,6 +1,7 @@
 package SEGAMessages;
 
 public class UserLoginResponse extends Response {
+    public static final String TYPE = "UserLoginResponse";
     private String username;
 
     public String getUsername() {
@@ -28,5 +29,10 @@ public class UserLoginResponse extends Response {
 
     public void setErrorMessage(String errorMessage) {
         this.errorMessage = errorMessage;
+    }
+
+    @Override
+    public String type() {
+        return TYPE;
     }
 }

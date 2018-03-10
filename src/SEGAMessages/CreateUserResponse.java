@@ -1,6 +1,7 @@
 package SEGAMessages;
 
 public class CreateUserResponse extends Response {
+    public static final String TYPE = "CreateUserResponse";
     private boolean succeeded;
     private String errorMessage;
 
@@ -20,4 +21,8 @@ public class CreateUserResponse extends Response {
         this.errorMessage = errorMessage;
     }
 
+    @Override
+    public String type() {
+        return TYPE;
+    }
 }

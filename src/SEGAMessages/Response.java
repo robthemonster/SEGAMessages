@@ -2,5 +2,6 @@ package SEGAMessages;
 
 import java.io.Serializable;
 
-public class Response implements Serializable {
+public abstract class Response implements Serializable {
+    public abstract String type();
 }
