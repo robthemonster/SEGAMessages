@@ -3,6 +3,7 @@ package SEGAMessages;
 public class UserLoginResponse extends Response {
     public static final String TYPE = "UserLoginResponse";
     private String username;
+    private boolean succeeded;
 
     public String getUsername() {
         return username;
@@ -12,8 +13,6 @@ public class UserLoginResponse extends Response {
         this.username = username;
     }
 
-    private boolean succeeded;
-    private String errorMessage;
 
     public boolean isSucceeded() {
         return succeeded;
@@ -21,14 +20,6 @@ public class UserLoginResponse extends Response {
 
     public void setSucceeded(boolean succeeded) {
         this.succeeded = succeeded;
-    }
-
-    public String getErrorMessage() {
-        return errorMessage;
-    }
-
-    public void setErrorMessage(String errorMessage) {
-        this.errorMessage = errorMessage;
     }
 
     @Override

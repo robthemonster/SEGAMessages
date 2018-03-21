@@ -3,7 +3,6 @@ package SEGAMessages;
 public class CreateUserResponse extends Response {
     public static final String TYPE = "CreateUserResponse";
     private boolean succeeded;
-    private String errorMessage;
 
     public boolean isSucceeded() {
         return succeeded;
@@ -13,13 +12,6 @@ public class CreateUserResponse extends Response {
         this.succeeded = succeeded;
     }
 
-    public String getErrorMessage() {
-        return errorMessage;
-    }
-
-    public void setErrorMessage(String errorMessage) {
-        this.errorMessage = errorMessage;
-    }
 
     @Override
     public String type() {

@@ -4,4 +4,14 @@ import java.io.Serializable;
 
 public abstract class Response implements Serializable {
     public abstract String type();
+
+    private String errorMessage;
+
+    public String getErrorMessage() {
+        return errorMessage;
+    }
+
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
+    }
 }
