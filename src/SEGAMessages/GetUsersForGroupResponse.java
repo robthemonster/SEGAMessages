@@ -4,6 +4,15 @@ import java.util.List;
 
 public class GetUsersForGroupResponse extends Response {
     public static final String TYPE = "GetUsersForGroupResponse";
+
+    @Override
+    public String toString() {
+        return "GetUsersForGroupResponse{" +
+                "users=" + users +
+                ", groupname='" + groupname + '\'' +
+                '}';
+    }
+
     private List<String> users;
     private String groupname;
 

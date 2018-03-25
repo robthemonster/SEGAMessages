@@ -13,6 +13,13 @@ public class GrantAuthorizationForGroupResponse extends Response {
     }
 
     @Override
+    public String toString() {
+        return "GrantAuthorizationForGroupResponse{" +
+                "succeded=" + succeded +
+                '}';
+    }
+
+    @Override
     public String type() {
         return TYPE;
     }

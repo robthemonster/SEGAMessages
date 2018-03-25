@@ -5,6 +5,15 @@ public class AddUserToGroupRequest extends Request {
     private String requestor;
     private String groupname;
 
+    @Override
+    public String toString() {
+        return "AddUserToGroupRequest{" +
+                "userToAdd='" + userToAdd + '\'' +
+                ", requestor='" + requestor + '\'' +
+                ", groupname='" + groupname + '\'' +
+                '}';
+    }
+
     public String getUserToAdd() {
         return userToAdd;
     }

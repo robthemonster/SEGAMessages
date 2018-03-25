@@ -4,6 +4,14 @@ public class GrantAuthorizationForGroupRequest extends Request {
     private String groupName;
     private String username;
 
+    @Override
+    public String toString() {
+        return "GrantAuthorizationForGroupRequest{" +
+                "groupName='" + groupName + '\'' +
+                ", username='" + username + '\'' +
+                '}';
+    }
+
     public String getGroupName() {
         return groupName;
     }

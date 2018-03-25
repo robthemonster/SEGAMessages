@@ -12,6 +12,12 @@ public class CreateUserResponse extends Response {
         this.succeeded = succeeded;
     }
 
+    @Override
+    public String toString() {
+        return "CreateUserResponse{" +
+                "succeeded=" + succeeded +
+                '}';
+    }
 
     @Override
     public String type() {

@@ -15,6 +15,13 @@ public class GetGroupsForUserResponse extends Response {
     }
 
     @Override
+    public String toString() {
+        return "GetGroupsForUserResponse{" +
+                "groups=" + groups +
+                '}';
+    }
+
+    @Override
     public String type() {
         return TYPE;
     }

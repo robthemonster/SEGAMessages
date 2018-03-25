@@ -10,4 +10,11 @@ public class GetGroupsForUserRequest extends Request {
     public void setUsername(String username) {
         this.username = username;
     }
+
+    @Override
+    public String toString() {
+        return "GetGroupsForUserRequest{" +
+                "username='" + username + '\'' +
+                '}';
+    }
 }

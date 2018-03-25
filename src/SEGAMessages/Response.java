@@ -11,6 +11,7 @@ public abstract class Response implements Serializable {
         return errorMessage;
     }
 
+    public abstract String toString();
     public void setErrorMessage(String errorMessage) {
         this.errorMessage = errorMessage;
     }

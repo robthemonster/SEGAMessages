@@ -5,6 +5,14 @@ public class UserLoginResponse extends Response {
     private String username;
     private boolean succeeded;
 
+    @Override
+    public String toString() {
+        return "UserLoginResponse{" +
+                "username='" + username + '\'' +
+                ", succeeded=" + succeeded +
+                '}';
+    }
+
     public String getUsername() {
         return username;
     }

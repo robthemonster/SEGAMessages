@@ -13,6 +13,13 @@ public class RequestAuthorizationFromGroupResponse extends Response {
     }
 
     @Override
+    public String toString() {
+        return "RequestAuthorizationFromGroupResponse{" +
+                "succeeded=" + succeeded +
+                '}';
+    }
+
+    @Override
     public String type() {
         return TYPE;
     }

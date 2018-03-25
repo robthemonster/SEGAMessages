@@ -19,4 +19,12 @@ public class GetUsersForGroupRequest extends Request {
     public void setGroupname(String groupname) {
         this.groupname = groupname;
     }
+
+    @Override
+    public String toString() {
+        return "GetUsersForGroupRequest{" +
+                "username='" + username + '\'' +
+                ", groupname='" + groupname + '\'' +
+                '}';
+    }
 }

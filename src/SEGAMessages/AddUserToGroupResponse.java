@@ -15,6 +15,13 @@ public class AddUserToGroupResponse extends Response {
     }
 
     @Override
+    public String toString() {
+        return "AddUserToGroupResponse{" +
+                "succeeded=" + succeeded +
+                '}';
+    }
+
+    @Override
     public String type() {
         return TYPE;
     }

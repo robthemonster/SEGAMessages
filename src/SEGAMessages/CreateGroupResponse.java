@@ -13,6 +13,13 @@ public class CreateGroupResponse extends Response {
     }
 
     @Override
+    public String toString() {
+        return "CreateGroupResponse{" +
+                "succeeded=" + succeeded +
+                '}';
+    }
+
+    @Override
     public String type() {
         return TYPE;
     }
