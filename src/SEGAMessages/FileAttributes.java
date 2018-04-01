@@ -5,6 +5,16 @@ import java.io.Serializable;
 public class FileAttributes implements Serializable {
     private String fileName;
     private long fileSize;
+
+    @Override
+    public String toString() {
+        return "FileAttributes{" +
+                "fileName='" + fileName + '\'' +
+                ", fileSize=" + fileSize +
+                ", fileType='" + fileType + '\'' +
+                '}';
+    }
+
     private String fileType;
 
     public String getFileName() {
