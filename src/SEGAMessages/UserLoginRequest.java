@@ -24,7 +24,7 @@ public class UserLoginRequest extends Request {
     public String toString() {
         return "UserLoginRequest{" +
                 "username='" + username + '\'' +
-                ", password='" + password + '\'' +
+                ", password=" + (password == null ? "NULL" : "NOT NULL") +
                 '}';
     }
 }

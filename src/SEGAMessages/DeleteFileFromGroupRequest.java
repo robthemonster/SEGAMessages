@@ -4,6 +4,7 @@ public class DeleteFileFromGroupRequest extends Request {
     private String filename;
     private String groupname;
     private String username;
+    private String token;
 
     @Override
     public String toString() {
@@ -11,7 +12,16 @@ public class DeleteFileFromGroupRequest extends Request {
                 "filename='" + filename + '\'' +
                 ", groupname='" + groupname + '\'' +
                 ", username='" + username + '\'' +
+                ", token='" + token + '\'' +
                 '}';
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 
     public String getFilename() {
