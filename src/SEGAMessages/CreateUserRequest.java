@@ -24,7 +24,7 @@ public class CreateUserRequest extends Request {
     public String toString() {
         return "CreateUserRequest{" +
                 "username='" + username + '\'' +
-                ", password='" + password + '\'' +
+                ", password=" + (password == null ? "NULL" : "NOT NULL") +
                 '}';
     }
 }
